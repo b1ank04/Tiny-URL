@@ -6,8 +6,8 @@ import org.blank.urlshortener.model.Url;
 import java.util.Optional;
 
 public interface UrlService {
-    public Optional<Url> generateShortLink(UrlDto urlDto);
-    public Url persistShortLink(Url entity);
-    public Optional<Url> getEncodedUrl(String url);
-    public void deleteShortLink(Url entity);
+    Optional<Url> generateShortLink(UrlDto urlDto);
+    Url persistShortLink(Url entity);
+    Optional<Url> getEncodedUrl(String url);
+    void deleteShortLink(Url entity);
 }
